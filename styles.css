@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+/* Home page styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(215, 203, 203);
+    /* width: 434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3 ease-in;
+
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 40px;
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+    color: black
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+
+
+
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: pink; */
+    height: 58vh;
+    width: 80vw;
+    margin: 147px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.infoContainer img {
+    height: 58vh;
+    border-radius: 50%;
+
+}
+
+.hello {
+    font-size: 65px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.about {
+    font-size: 40px;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.buttons .btn {
+    background-color: dodgerblue;
+    padding: 9px 14px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.moreAbout {
+    margin-top: 23px;
+    font-size: 22px;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+/* Contact Form styles */
+
+.contactform {
+    padding: 0 34px;
+    padding-top: 145px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 500px;
+
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+
+
+}
+
+.contactform form div {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-text {
+    font-size: 8px;
+    margin: 0 5px;
+    color: midnightblue;
+    margin-top: 10px;
+}
+
+.form-control {
+    width: 350px;
+    padding: 3px;
+    border-radius: 5px
+}
+
+.contactform .form-check {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-check .form-check-label {
+    padding-left: 5px;
+}
+
+.btn-sm {
+    background-color: dodgerblue;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.btn-sm:hover {
+
+    background-color: white;
+    color: dodgerblue;
+}
+
+/* Blog's page style */
+
+.blogContainer h1 {
+    margin: 25px 15px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.blogItem {
+    margin: 25px 15px;
+}
+
+.blogItem h2 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.blogItem p {
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+/* Itro's page styels */
+.introContainer h1 {
+    margin: 25px 15px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.introContainer p {
+    font-family: 'Source Code Pro', monospace;
+    margin: 25px 15px;
+}
+
+.skillsContainer {
+    margin: 25px 15px;
+}
+
+.skill {
+    padding-top: 15px;
+
+}
+
+.skill1 {
+    width: 500px;
+    height: 15px;
+    background-color: red;
+    border: 2px solid black;
+
+}
+
+.skillHouse {
+    display: flex;
+    padding-top: 20px;
+}
+
+.skill2 {
+    width: 200px;
+    height: 15px;
+    background-color: blue;
+    border: 2px solid black;
+}
+
+@media (max-width: 1250px) {
+    * {
+        /* background-color: red; */
+    }
+
+    .devPic {
+        display: none;
+    }
+
+    /* .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+}
+
+.hamburger img {
+    width: 23px;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px
+}
+
+.cross {
+    margin-left: 190px;
+}
