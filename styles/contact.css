@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+/* Home page styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(215, 203, 203);
+    /* width: 434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3 ease-in;
+
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 40px;
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+    color: black
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+
+
+
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+
+.contactform {
+    padding: 0 34px;
+    padding-top: 145px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 500px;
+
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+
+
+}
+
+.contactform form div {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-text {
+    font-size: 8px;
+    margin: 0 5px;
+    color: midnightblue;
+    margin-top: 10px;
+}
+
+.form-control {
+    width: 350px;
+    padding: 3px;
+    border-radius: 5px
+}
+
+.contactform .form-check {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-check .form-check-label {
+    padding-left: 5px;
+}
+
+.btn-sm {
+    background-color: dodgerblue;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.btn-sm:hover {
+
+    background-color: white;
+    color: dodgerblue;
+}
+
+@media (max-width: 1250px) {
+    * {
+        /* background-color: red; */
+    }
+
+    .devPic {
+        display: none;
+    }
+
+    /* .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+}
+
+.hamburger img {
+    width: 23px;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px
+}
+
+.cross {
+    margin-left: 190px;
+}
