@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+/* Home page styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(215, 203, 203);
+    /* width: 434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3 ease-in;
+
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 40px;
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+    color: black
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+
+
+
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+@media (max-width: 1250px) {
+    * {
+        /* background-color: red; */
+    }
+
+    .devPic {
+        display: none;
+    }
+
+    /* .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+}
+
+.hamburger img {
+    width: 23px;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px
+}
+
+.cross {
+    margin-left: 190px;
+}
+
+
+
+.servicesContainer {
+    padding: 100px;
+    text-align: center;
+}
+
+.servicesContainer h1 {
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.servicesContainer h3 {
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 2em;
+
+}
+
+.servicesContainer img {
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 2em;
+    width: 20em;
+
+}
