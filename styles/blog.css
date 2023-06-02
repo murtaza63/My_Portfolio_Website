@@ -55,6 +55,7 @@
 .blogContainer h1 {
     margin: 25px 15px;
     font-family: 'Fira Sans', sans-serif;
+    padding-top: 3em;
 }
 
 .blogItem {
