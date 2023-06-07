@@ -51,6 +51,9 @@
     display: flex;
 }
 
+.blogContainer {
+    margin: 25px 15px
+}
 
 .blogContainer h1 {
     margin: 25px 15px;
@@ -84,4 +87,21 @@
 
 .cross {
     margin-left: 190px;
+}
+
+.btn-sm {
+    background-color: dodgerblue;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.btn-sm:hover {
+
+    background-color: white;
+    color: dodgerblue;
 }
