@@ -123,3 +123,36 @@
 .cross {
     margin-left: 190px;
 }
+
+.proj_images {
+    width: 20em;
+    height: 10em;
+}
+
+.project1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.project1 h3 {
+    text-align: center;
+
+}
+
+.project1 .project_url {
+    padding-left: 5em;
+    text-decoration: none;
+
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+
+}
+
+.projectContainer h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}

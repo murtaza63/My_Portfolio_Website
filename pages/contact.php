@@ -39,8 +39,8 @@
                 <form>
                     <div class="form-group">
                         <label for="clintname">Name</label>
-                        <input type="text" name="mname" class="form-control" id="clientname"
-                            aria-describedby="emailHelp" placeholder="Enter Name">
+                        <input type="text" name="nm" class="form-control" id="clientname" aria-describedby="emailHelp"
+                            placeholder="Enter Name">
 
                     </div>
                     <div class="form-group">
@@ -64,7 +64,7 @@
                         <input type="checkbox" name="work" class="form-check-input" id="isclient">
                         <label class="form-check-label" for="isclient">Contact for work</label>
                     </div>
-                    <button type="submit" class="btn btn-sm">Submit</button>
+                    <button type="submit" name="register" class="btn btn-sm">Submit</button>
                 </form>
 
             </div>
@@ -76,13 +76,35 @@
 
 </html>
 <?php
-$con = mysqli_connect("localhost", "root", "", "my_db");
 
-$mname = $_POST['mname'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$enquiry = $_POST['enquiry'];
-$work = $_POST['work'];
-$query = "INSERT ITNO contactinfo VALUES('$mname','$email','$phone','$enquiry','$work')";
+$servername = "localhost";
+$username = "id20855280_root";
+$password = "Gm$1091987";
+$database = "id20855280_portfoliodb";
+
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+if(isset($_POST['register'])){
+    $name = $_POST['mname'];
+    echo $name;
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $enquiry = $_POST['enquiry'];
+    $mywork = $_Post['work'];
+    $allwork = implode($mywork)
+
+
+    
+    $query = "INSERT INTO enqueryform ('NAME', 'email','Phone', 'Enquery') VALUES ('$name','$email','$phone','$enquiry')";
+    $data = mysqli_query($conn, $query);
+    if($data){
+        echo "Thanks for contacting us we will contacting you soon!";
+    }else{
+        echo "Failed";
+    };
+    
+};
 
 ?>
